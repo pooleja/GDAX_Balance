@@ -1,0 +1,11 @@
+{
+  "name": "gdax_balance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getBalance.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

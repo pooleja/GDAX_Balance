@@ -1,0 +1,5 @@
+// Fill this out with your own info and rename to "config.js"
+
+exports.ACCESS_KEY = ''; // ie: 76784dhfjkhsdfjkh
+exports.SECRET_KEY = ''; // ie: 'HDULKEJKJ/7x...'
+exports.PASSPHRASE_KEY = ''; //ie: 'this is the secret passphrase you put into the API key generation tool'
