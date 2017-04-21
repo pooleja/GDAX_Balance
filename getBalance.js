@@ -1,4 +1,4 @@
-var Env = require('./config.js');
+var Env = require('./config/config.js');
 
 var Gdax = require('gdax');
 var authedClient = new Gdax.AuthenticatedClient(Env.ACCESS_KEY, Env.SECRET_KEY, Env.PASSPHRASE_KEY);
@@ -10,8 +10,10 @@ var winston = require('winston');
 
 winston.log('info', "Calculating balance.");
 
+// Get the account
 authedClient.getAccounts(function(error, response, accounts){
 
+    // Get the ticker for the current BTC price
     authedClient.getProductTicker(function(error, response, data){
 
         if (error || response.statusCode != 200) {
@@ -20,7 +22,7 @@ authedClient.getAccounts(function(error, response, accounts){
             return;
         }
 
-        winston.log('info', JSON.stringify(data));
+        //winston.log('info', JSON.stringify(data));
 
         var currentPrice = Number(data.price);
         winston.log('info', "Current market price: $" + currentPrice);
