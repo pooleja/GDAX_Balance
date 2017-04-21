@@ -17,5 +17,5 @@ $ npm install
 Edit the config
 
 ```
-$ npm run
+$ npm run start
 ```
