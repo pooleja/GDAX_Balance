@@ -12,10 +12,5 @@ $ cd GDAX_Balance
 $ cp config/config.js.template config/config.js
 $ vi config/config.js
 $ npm install
-```
-
-Edit the config
-
-```
 $ npm run start
 ```
